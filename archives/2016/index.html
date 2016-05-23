@@ -4,24 +4,17 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>在iOS中接入支付宝 | 落入凡间的猪</title>
+  <title>Archives: 2016 | 落入凡间的猪</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近需要在app中用到支付宝，这边blog将说说怎么将支付宝的SDK接入到iOS中，其实也没有什么难度的地方，但是人们总对未知的事物感到恐惧，没有办法控制。但是我想说：Just do it！
-
-首先去支付宝网站下载对应的sdk，然后找到客户端iOS_SDK,打开工程编译，尽然出错了，心里一紧，靠，是不是有问题？还需要什么东西么？不要着急，我们看编译错误，发现一些库没有找到，我们找到设置里面，”Li">
-<meta property="og:type" content="article">
-<meta property="og:title" content="在iOS中接入支付宝">
-<meta property="og:url" content="http://yangsheng.com/2014/10/15/2014-10-15-zai-ioszhong-jie-ru-zhi-fu-bao/index.html">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="落入凡间的猪">
+<meta property="og:url" content="http://yangsheng.com/archives/2016/index.html">
 <meta property="og:site_name" content="落入凡间的猪">
-<meta property="og:description" content="最近需要在app中用到支付宝，这边blog将说说怎么将支付宝的SDK接入到iOS中，其实也没有什么难度的地方，但是人们总对未知的事物感到恐惧，没有办法控制。但是我想说：Just do it！
-
-首先去支付宝网站下载对应的sdk，然后找到客户端iOS_SDK,打开工程编译，尽然出错了，心里一紧，靠，是不是有问题？还需要什么东西么？不要着急，我们看编译错误，发现一些库没有找到，我们找到设置里面，”Li">
-<meta property="og:updated_time" content="2014-10-15T07:44:55.000Z">
+<meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在iOS中接入支付宝">
-<meta name="twitter:description" content="最近需要在app中用到支付宝，这边blog将说说怎么将支付宝的SDK接入到iOS中，其实也没有什么难度的地方，但是人们总对未知的事物感到恐惧，没有办法控制。但是我想说：Just do it！
-
-首先去支付宝网站下载对应的sdk，然后找到客户端iOS_SDK,打开工程编译，尽然出错了，心里一紧，靠，是不是有问题？还需要什么东西么？不要着急，我们看编译错误，发现一些库没有找到，我们找到设置里面，”Li">
+<meta name="twitter:title" content="落入凡间的猪">
+<meta name="twitter:description">
   
     <link rel="alternative" href="/atom.xml" title="落入凡间的猪" type="application/atom+xml">
   
@@ -207,123 +200,49 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-2014-10-15-zai-ioszhong-jie-ru-zhi-fu-bao" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap">
   
-    <div class="article-meta">
-      <a href="/2014/10/15/2014-10-15-zai-ioszhong-jie-ru-zhi-fu-bao/" class="article-date">
-  	<time datetime="2014-10-15T06:17:00.000Z" itemprop="datePublished">2014-10-15</time>
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2016/05/23/入手Jaybird-X2/" class="archive-article-date">
+  	<time datetime="2016-05-23T02:24:13.000Z" itemprop="datePublished">May 23</time>
 </a>
-    </div>
+        </div>
+    	 
   
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      在iOS中接入支付宝
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2016/05/23/入手Jaybird-X2/">入手Jaybird X2</a>
     </h1>
   
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
-        
+        <div class="article-info info-on-right">
+          
+          
 
+        </div>
         <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>最近需要在app中用到支付宝，这边blog将说说怎么将支付宝的SDK接入到iOS中，其实也没有什么难度的地方，但是人们总对未知的事物感到恐惧，没有办法控制。但是我想说：Just do it！</p>
-
-<p><br>首先去支付宝网站下载对应的sdk，然后找到客户端iOS_SDK,打开工程编译，尽然出错了，心里一紧，靠，是不是有问题？还需要什么东西么？不要着急，我们看编译错误，发现一些库没有找到，我们找到设置里面，”Library Search Paths”，去掉多余的一些斜杠就行了。<br></p>
-
-<p><br>接下来我们需要配置PartnerConfig.h，配置PartnerID,SellerID,MD5_KEY,这些都可以在商户中看到，商户的公私钥可以根据文档来生成，需要注意的是，我们需要对商户的私钥进行PKCS8编码，我们把生成的公钥上传到支付宝。好了，这下Demo中的例子应该能够运行了，提示“您还没有安装支付宝快捷支付，点击确定下载安装”表示配置成功了。<br></p>
-
-<p><br>看实例中的PayViewController，其实也就几个函数，处理订单和支付成功后的回调，其它的你程序该怎么走就怎么走了。<br></p>
-
-<p><br>好了，希望大家能够顺利的接入支付宝。<br></p>
-
-
-      
-    </div>
-    
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2016/05/23/入手Jaybird-X2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          入手Jaybird X2
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2013/12/01/2013-12-03-ru-shou-apple-tvhe-tu-hao-jin/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">入手Apple TV和土豪金</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
-  
-</nav>
-
-  
 </article>
+  
+  
+    </div></section>
+  
 
-
-<div class="share_jia">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">Share to: &nbsp; </span>
-		<a class="jiathis_button_facebook"></a> 
-    <a class="jiathis_button_twitter"></a>
-    <a class="jiathis_button_plus"></a> 
-    <a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	</div>
-	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-</div>
-
-
-
-
-
-
-<div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="2014-10-15-zai-ioszhong-jie-ru-zhi-fu-bao" data-title="在iOS中接入支付宝" data-url="http://yangsheng.com/2014/10/15/2014-10-15-zai-ioszhong-jie-ru-zhi-fu-bao/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"true"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
-
-
+    
 
 </div>
       <footer id="footer">
@@ -349,8 +268,8 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false
